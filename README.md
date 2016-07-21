@@ -20,7 +20,7 @@
 [download-image]: https://img.shields.io/npm/dm/egg-cors.svg?style=flat-square
 [download-url]: https://npmjs.org/package/egg-cors
 
-[CORS]() plugin for egg, based on [kcors](https://github.com/koajs/cors).
+[CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS) plugin for egg, based on [kcors](https://github.com/koajs/cors).
 
 ## Install
 
