@@ -33,9 +33,27 @@ $ npm i egg-cors --save
 - plugin.js
 
 ```js
+// shorthand, because it has been defined in default plugin.js
+exports.cors = true;
+```
+
+```js
+// long form, enable `cors` and point to the egg cors plugin that you want to use
 exports.cors = {
   enable: true,
   package: 'egg-cors',
+};
+```
+
+- config.default.js
+
+`egg-cors` works internally with [egg-security](https://github.com/eggjs/egg-security). By defining the property of `domainWhiteList` on object `security`, you have successfully informed the framework to whitelist the passed domains.
+
+When you make a request from client side, **egg** should return an `Access-Control-Allow-Origin` response header with the domain that you passed in along with the payload and status code *200*.
+
+```js
+exports.security = {
+  domainWhiteList: ['http://localhost:4200']
 };
 ```
 
