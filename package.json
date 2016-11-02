@@ -27,12 +27,10 @@
     "egg-bin": "^1.6.0",
     "egg-ci": "^1.0.3",
     "egg-mock": "^1.1.0",
-    "egg-security": "*",
+    "egg-security": "^1.2.1",
     "eslint": "^3.9.1",
     "eslint-config-egg": "^3.1.0",
-    "should": "^11.1.1",
-    "supertest": "^2.0.1",
-    "supertest-as-promised": "^4.0.1"
+    "supertest": "^2.0.1"
   },
   "engines": {
     "node": ">=4.0.0"
