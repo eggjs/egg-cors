@@ -53,7 +53,7 @@ When you make a request from client side, **egg** should return an `Access-Contr
 
 ```js
 exports.security = {
-  domainWhiteList: ['http://localhost:4200']
+  domainWhiteList: [ 'http://localhost:4200' ],
 };
 ```
 

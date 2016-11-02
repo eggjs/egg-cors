@@ -1,5 +1,6 @@
 'use strict';
 
+const path = require('path');
 const assert = require('assert');
 const request = require('supertest-as-promised');
 const mm = require('egg-mock');
@@ -9,6 +10,7 @@ describe('test/cors.test.js', () => {
   before(() => {
     app = mm.app({
       baseDir: 'apps/cors',
+      customEgg: path.join(__dirname, '../node_modules/egg'),
     });
     return app.ready();
   });
