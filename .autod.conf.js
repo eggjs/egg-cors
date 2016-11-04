@@ -14,6 +14,8 @@ module.exports = {
     'eslint',
     'eslint-config-egg',
     'supertest',
+    'intelli-espower-loader',
+    'power-assert',
   ],
   exclude: [
     './test/fixtures',

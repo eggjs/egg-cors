@@ -30,10 +30,10 @@ $ npm i egg-cors --save
 
 ## Usage
 
-- plugin.js
+`egg-cors` is a plugin that has been built-in for egg. But it is disabled by default.
 
 ```js
-// shorthand, because it has been defined in default plugin.js
+// {app_root}/config/plugin.js
 exports.cors = true;
 ```
 
@@ -44,8 +44,6 @@ exports.cors = {
   package: 'egg-cors',
 };
 ```
-
-- config.default.js
 
 `egg-cors` works internally with [egg-security](https://github.com/eggjs/egg-security). By defining the property of `domainWhiteList` on object `security`, you have successfully informed the framework to whitelist the passed domains.
 
@@ -60,6 +58,13 @@ exports.security = {
 ## Configuration
 
 Support all configurations in [kcors](https://github.com/koajs/cors).
+
+```js
+// {app_root}/config/config.default.js
+exports.cors = {
+  // allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH'
+};
+```
 
 ## Security
 
