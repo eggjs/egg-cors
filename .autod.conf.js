@@ -14,9 +14,11 @@ module.exports = {
     'eslint',
     'eslint-config-egg',
     'supertest',
-    'should',
+    'intelli-espower-loader',
+    'power-assert',
   ],
   exclude: [
     './test/fixtures',
   ],
-}
+  registry: 'https://r.cnpmjs.org',
+};
