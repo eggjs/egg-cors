@@ -1,6 +1,6 @@
 {
   "name": "egg-cors",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "cors plugin for egg",
   "eggPlugin": {
     "name": "cors"
