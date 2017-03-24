@@ -34,7 +34,7 @@ $ npm i egg-cors --save
 
 ```js
 // {app_root}/config/plugin.js
-exports.cors = true;
+exports['egg-cors'] = true;
 ```
 
 ```js
