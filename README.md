@@ -30,15 +30,8 @@ $ npm i egg-cors --save
 
 ## Usage
 
-`egg-cors` is a plugin that has been built-in for egg. But it is disabled by default.
-
 ```js
 // {app_root}/config/plugin.js
-exports.cors = true;
-```
-
-```js
-// long form, enable `cors` and point to the egg cors plugin that you want to use
 exports.cors = {
   enable: true,
   package: 'egg-cors',
