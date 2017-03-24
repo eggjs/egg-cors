@@ -1,4 +1,10 @@
 
+1.1.0 / 2017-03-24
+==================
+
+  * feat: update to egg@1.0 and docs fix (#6)
+  * fix: adjust with new test (#4)
+
 1.0.0 / 2016-11-04
 ==================
 
