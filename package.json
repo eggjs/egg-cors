@@ -20,7 +20,7 @@
     "egg-plugin"
   ],
   "dependencies": {
-    "kcors": "^2.2.1"
+    "kcors": "^1.3.2"
   },
   "devDependencies": {
     "autod": "^2.8.0",
