@@ -4,7 +4,7 @@ const assert = require('assert');
 const request = require('supertest');
 const mm = require('egg-mock');
 
-describe.only('test/cors.origin.test.js', () => {
+describe('test/cors.origin.test.js', () => {
   let app;
   before(() => {
     app = mm.app({
