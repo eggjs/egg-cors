@@ -55,9 +55,12 @@ Support all configurations in [kcors](https://github.com/koajs/cors).
 ```js
 // {app_root}/config/config.default.js
 exports.cors = {
-  // allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH'
+  // {string|Function} origin: '*',
+  // {string|Array} allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH'
 };
 ```
+
+If the `origin` is set, the plugin will follow it to set the `Access-Control-Allow-Origin` and ignore the `security.domainWhiteList`. Otherwise, the `security.domainWhiteList` which is default will take effect as described above.
 
 ## Security
 
