@@ -1,4 +1,10 @@
 
+1.2.0 / 2017-07-24
+==================
+
+  * deps: update deps (#8)
+  * feat: add config for Access-Control-Allow-Origin (#7)
+
 1.1.0 / 2017-03-24
 ==================
 
