@@ -24,12 +24,12 @@
   },
   "devDependencies": {
     "autod": "^2.8.0",
-    "egg": "^1.0.0",
-    "egg-bin": "^4.0.4",
-    "egg-ci": "^1.6.0",
-    "egg-mock": "^3.2.0",
+    "egg": "^1.6.1",
+    "egg-bin": "^4.0.5",
+    "egg-ci": "^1.8.0",
+    "egg-mock": "^3.8.0",
     "egg-security": "^1.2.1",
-    "eslint": "^4.1.1",
+    "eslint": "^4.3.0",
     "eslint-config-egg": "^5.0.0",
     "supertest": "^3.0.0"
   },
@@ -37,15 +37,15 @@
     "node": ">=6.0.0"
   },
   "scripts": {
-    "test": "npm run lint -- --fix && npm run test-local",
+    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
     "test-local": "egg-bin test",
     "cov": "egg-bin cov",
     "lint": "eslint .",
-    "ci": "npm run lint && npm run cov",
+    "ci": "egg-bin pkgfiles --check && npm run lint && npm run cov",
     "autod": "autod"
   },
   "ci": {
-    "version": "6, 7"
+    "version": "6, 8"
   },
   "author": "dead_horse"
 }
