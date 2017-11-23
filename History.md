@@ -1,4 +1,10 @@
 
+2.0.0 / 2017-11-23
+==================
+
+**others**
+  * [[`120639f`](http://github.com/eggjs/egg-cors/commit/120639fb784ed1ea71eff071124d3f242b52ab72)] - refactor: use async function and support egg@2 (#9) (Yiyu He <<dead_horse@qq.com>>)
+
 1.2.0 / 2017-07-24
 ==================
 
