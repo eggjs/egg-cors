@@ -1,6 +1,6 @@
 
-declare module 'egg-cors' {
-  export interface Config {
+declare module 'egg' {
+  export interface EggAppConfig {
     cors: {
       origin: string | (() => string);
       allowMethods: string | string[];
