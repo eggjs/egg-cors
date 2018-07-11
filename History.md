@@ -1,4 +1,10 @@
 
+2.1.0 / 2018-07-11
+==================
+
+**others**
+  * [[`ff8b7da`](http://github.com/eggjs/egg-cors/commit/ff8b7dab9c9acff5f5319ecca1fe0df5d1ebfaf8)] - chore(typings): add interface Config['cors'] (#12) (waiting <<waiting@xiaozhong.biz>>)
+
 2.0.0 / 2017-11-23
 ==================
 
