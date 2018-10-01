@@ -1,4 +1,11 @@
 
+2.1.1 / 2018-10-01
+==================
+
+  * deps: update (#17)
+  * chore: add types of cors option. (#15)
+  * docs: update readme (#16)
+
 2.1.0 / 2018-07-11
 ==================
 
@@ -30,7 +37,7 @@
   * doc: add configuration information on how to pass in domain whitelist (#2)
   * test: add tests (#1)
 
-0.0.2 / 2016-07-15 
+0.0.2 / 2016-07-15
 ==================
 
   * init
