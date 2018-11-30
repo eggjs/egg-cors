@@ -1,8 +1,9 @@
+import { Context } from 'egg';
 
 declare module 'egg' {
   export interface EggAppConfig {
     cors: {
-      origin: string | (() => string);
+      origin: string | ((ctx: Context) => string);
       allowMethods: string | string[];
       exposeHeaders?: string | string[];
       allowHeaders?: string | string[];
@@ -10,5 +11,5 @@ declare module 'egg' {
       credentials?: boolean;
       keepHeadersOnError?: boolean;
     }
-  };
+  }
 }
