@@ -1,4 +1,10 @@
 
+2.2.0 / 2019-03-11
+==================
+
+**features**
+  * [[`30a1b8c`](http://github.com/eggjs/egg-cors/commit/30a1b8c8cf58cacd208f86905d334588db523b8e)] - feat: use koa/cors@3, support options.origin to be async function (#19) (Yiyu He <<dead_horse@qq.com>>)
+
 2.1.2 / 2018-11-30
 ==================
 
