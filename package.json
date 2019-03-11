@@ -22,7 +22,7 @@
     "cors"
   ],
   "dependencies": {
-    "@koa/cors": "^2.2.2"
+    "@koa/cors": "^3.0.0"
   },
   "devDependencies": {
     "autod": "^3.0.1",
