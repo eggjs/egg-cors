@@ -8,6 +8,6 @@ exports.cors = {
 
 exports.security = {
   domainWhiteList: [
-    'eggjs.org',
+    '.eggjs.org',
   ],
 };

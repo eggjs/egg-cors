@@ -37,6 +37,26 @@ describe('test/cors.test.js', () => {
       .expect(200);
   });
 
+  it('should set `Access-Control-Allow-Origin` to request origin header with second-level domain', () => {
+    return request(app.callback())
+      .get('/')
+      .set('Origin', 'http://test.eggjs.org')
+      .expect('Access-Control-Allow-Origin', 'http://test.eggjs.org')
+      .expect('Access-Control-Allow-Credentials', 'true')
+      .expect({ foo: 'bar' })
+      .expect(200);
+  });
+
+  it('should set `Access-Control-Allow-Origin` to request origin header with port', () => {
+    return request(app.callback())
+      .get('/')
+      .set('Origin', 'http://eggjs.org:3721')
+      .expect('Access-Control-Allow-Origin', 'http://eggjs.org:3721')
+      .expect('Access-Control-Allow-Credentials', 'true')
+      .expect({ foo: 'bar' })
+      .expect(200);
+  });
+
   it('should set `Access-Control-Allow-Origin` on POST request', () => {
     app.mockCsrf();
     return request(app.callback())
