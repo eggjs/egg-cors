@@ -1,4 +1,10 @@
 
+2.2.1 / 2019-10-22
+==================
+
+**fixes**
+  * [[`499c2b1`](http://github.com/eggjs/egg-cors/commit/499c2b1cd730b4a9d5d7811946661cc9b475326d)] - fix: second-level domain and port support misjudgement (#20) (Khaidi Chu <<i@2333.moe>>)
+
 2.2.0 / 2019-03-11
 ==================
 
