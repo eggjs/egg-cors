@@ -1,4 +1,13 @@
 
+2.2.2 / 2019-10-25
+==================
+
+**fixes**
+  * [[`74e8c26`](http://github.com/eggjs/egg-cors/commit/74e8c264ddbc3aa4b926efa7696a310ef3dabe71)] - fix: should also check origin with port (#21) (Yelmor <<yelmor@outlook.com>>)
+
+**others**
+  * [[`53ffc7e`](http://github.com/eggjs/egg-cors/commit/53ffc7ec2cb4d119dc2e6b76bbccb0ed7a3712e9)] - chore: update travis (TZ | 天猪 <<atian25@qq.com>>)
+
 2.2.1 / 2019-10-22
 ==================
 
