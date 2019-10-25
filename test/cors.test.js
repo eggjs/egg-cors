@@ -47,6 +47,36 @@ describe('test/cors.test.js', () => {
       .expect(200);
   });
 
+  it('should set `Access-Control-Allow-Origin` to white list domain with protocol', () => {
+    return request(app.callback())
+      .get('/')
+      .set('Origin', 'https://a.com')
+      .expect('Access-Control-Allow-Origin', 'https://a.com')
+      .expect('Access-Control-Allow-Credentials', 'true')
+      .expect({ foo: 'bar' })
+      .expect(200);
+  });
+
+  it('should set `Access-Control-Allow-Origin` to white list domain with protocol and port', () => {
+    return request(app.callback())
+      .get('/')
+      .set('Origin', 'https://b.com:1234')
+      .expect('Access-Control-Allow-Origin', 'https://b.com:1234')
+      .expect('Access-Control-Allow-Credentials', 'true')
+      .expect({ foo: 'bar' })
+      .expect(200);
+  });
+
+  it('should set `Access-Control-Allow-Origin` to white list domain with protocol, wildcard and port', () => {
+    return request(app.callback())
+      .get('/')
+      .set('Origin', 'https://x.c.com')
+      .expect('Access-Control-Allow-Origin', 'https://x.c.com')
+      .expect('Access-Control-Allow-Credentials', 'true')
+      .expect({ foo: 'bar' })
+      .expect(200);
+  });
+
   it('should set `Access-Control-Allow-Origin` to request origin header with port', () => {
     return request(app.callback())
       .get('/')

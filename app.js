@@ -13,7 +13,7 @@ module.exports = app => {
     if (!origin) return '';
 
     const parsedUrl = url.parse(origin);
-    if (!ctx.isSafeDomain || ctx.isSafeDomain(parsedUrl.hostname)) {
+    if (!ctx.isSafeDomain || ctx.isSafeDomain(parsedUrl.hostname) || ctx.isSafeDomain(origin)) {
       return origin;
     }
     return '';
