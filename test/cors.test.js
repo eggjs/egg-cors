@@ -120,4 +120,16 @@ describe('test/cors.test.js', () => {
       })
       .expect(200);
   });
+
+  it('should not set `Access-Control-Allow-Origin` when origin = /foo', () => {
+    app.mockCsrf();
+    return request(app.callback())
+      .get('/')
+      .set('Origin', '/foo')
+      .expect(res => {
+        assert(!res.headers['access-control-allow-origin']);
+        assert(!res.headers['access-control-allow-credentials']);
+      })
+      .expect(200);
+  });
 });
