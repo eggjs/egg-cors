@@ -108,4 +108,16 @@ describe('test/cors.test.js', () => {
       })
       .expect(200);
   });
+
+  it('should not set `Access-Control-Allow-Origin` when origin = http://eggjs.org!.evil.com', () => {
+    app.mockCsrf();
+    return request(app.callback())
+      .get('/')
+      .set('Origin', 'http://eggjs.org!.evil.com')
+      .expect(res => {
+        assert(!res.headers['access-control-allow-origin']);
+        assert(!res.headers['access-control-allow-credentials']);
+      })
+      .expect(200);
+  });
 });

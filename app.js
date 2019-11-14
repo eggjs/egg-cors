@@ -1,6 +1,7 @@
 'use strict';
 
-const url = require('url');
+// there is no global.URL in node 8
+const URL = require('url').URL;
 
 module.exports = app => {
   // put before other core middlewares
@@ -12,8 +13,16 @@ module.exports = app => {
     const origin = ctx.get('origin');
     if (!origin) return '';
 
-    const parsedUrl = url.parse(origin);
-    if (!ctx.isSafeDomain || ctx.isSafeDomain(parsedUrl.hostname) || ctx.isSafeDomain(origin)) {
+    if (!ctx.isSafeDomain) return origin;
+
+    let parsedUrl;
+    try {
+      parsedUrl = new URL(origin);
+    } catch (err) {
+      return '';
+    }
+
+    if (ctx.isSafeDomain(parsedUrl.hostname) || ctx.isSafeDomain(origin)) {
       return origin;
     }
     return '';
