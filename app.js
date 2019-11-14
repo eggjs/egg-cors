@@ -13,7 +13,7 @@ module.exports = app => {
     const origin = ctx.get('origin');
     if (!origin) return '';
 
-    if (!ctx.isSafeDomain) return origin;
+    if (typeof ctx.isSafeDomain !== 'function') return origin;
 
     let parsedUrl;
     try {

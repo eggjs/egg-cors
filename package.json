@@ -50,7 +50,7 @@
     "url": "https://github.com/eggjs/egg/issues"
   },
   "ci": {
-    "version": "8, 10"
+    "version": "8, 10, 12"
   },
   "author": "dead_horse"
 }
