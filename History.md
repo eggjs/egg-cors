@@ -1,4 +1,10 @@
 
+2.2.3 / 2019-11-14
+==================
+
+**fixes**
+  * [[`7990aa7`](http://github.com/eggjs/egg-cors/commit/7990aa7c92fa2c82bb6e9018b7191852879f1569)] - fix: use new URL instead of url.parse (#22) (Yiyu He <<dead_horse@qq.com>>)
+
 2.2.2 / 2019-10-25
 ==================
 
