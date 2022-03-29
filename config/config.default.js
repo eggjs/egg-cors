@@ -3,6 +3,6 @@
 /**
  * cors default config
  * @member Config#cors
- * @see https://www.npmjs.com/package/kcors#corsoptions
+ * @see https://github.com/koajs/cors#corsoptions
  */
 exports.cors = {};
