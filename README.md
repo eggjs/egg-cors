@@ -3,16 +3,12 @@
 [![NPM version][npm-image]][npm-url]
 [![Node.js CI](https://github.com/eggjs/egg-cors/actions/workflows/nodejs.yml/badge.svg)](https://github.com/eggjs/egg-cors/actions/workflows/nodejs.yml)
 [![Test coverage][codecov-image]][codecov-url]
-[![David deps][david-image]][david-url]
-[![Known Vulnerabilities][snyk-image]][snyk-url]
 [![npm download][download-image]][download-url]
 
 [npm-image]: https://img.shields.io/npm/v/egg-cors.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/egg-cors
 [codecov-image]: https://codecov.io/github/eggjs/egg-cors/coverage.svg?branch=master
 [codecov-url]: https://codecov.io/github/eggjs/egg-cors?branch=master
-[snyk-image]: https://snyk.io/test/npm/egg-cors/badge.svg?style=flat-square
-[snyk-url]: https://snyk.io/test/npm/egg-cors
 [download-image]: https://img.shields.io/npm/dm/egg-cors.svg?style=flat-square
 [download-url]: https://npmjs.org/package/egg-cors
 
