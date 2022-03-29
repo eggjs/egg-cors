@@ -1,7 +1,6 @@
 'use strict';
 
 const assert = require('assert');
-const request = require('supertest');
 const mm = require('egg-mock');
 
 describe('test/cors.origin-function.test.js', () => {
@@ -18,7 +17,7 @@ describe('test/cors.origin-function.test.js', () => {
   afterEach(mm.restore);
 
   it('should not set `Access-Control-Allow-Origin` when request Origin header missing', () => {
-    return request(app.callback())
+    return app.httpRequest()
       .get('/')
       .expect({ foo: 'bar' })
       .expect(res => {
@@ -28,7 +27,7 @@ describe('test/cors.origin-function.test.js', () => {
   });
 
   it('should set `Access-Control-Allow-Origin` to request origin header', () => {
-    return request(app.callback())
+    return app.httpRequest()
       .get('/')
       .set('Origin', 'http://eggjs.org')
       .expect('Access-Control-Allow-Origin', 'eggjs.org')
@@ -39,7 +38,7 @@ describe('test/cors.origin-function.test.js', () => {
 
   it('should set `Access-Control-Allow-Origin` on POST request', () => {
     app.mockCsrf();
-    return request(app.callback())
+    return app.httpRequest()
       .post('/')
       .set('Origin', 'http://eggjs.org')
       .expect('Access-Control-Allow-Origin', 'eggjs.org')
@@ -49,7 +48,7 @@ describe('test/cors.origin-function.test.js', () => {
 
   it('should set `Access-Control-Allow-Origin` equal to the config not the white list', () => {
     app.mockCsrf();
-    return request(app.callback())
+    return app.httpRequest()
       .get('/')
       .set('Origin', 'http://eggjs-white.org')
       .expect('Access-Control-Allow-Origin', 'eggjs.org')

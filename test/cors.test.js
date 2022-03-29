@@ -1,7 +1,6 @@
 'use strict';
 
 const assert = require('assert');
-const request = require('supertest');
 const mm = require('egg-mock');
 
 describe('test/cors.test.js', () => {
@@ -18,7 +17,7 @@ describe('test/cors.test.js', () => {
   afterEach(mm.restore);
 
   it('should not set `Access-Control-Allow-Origin` when request Origin header missing', () => {
-    return request(app.callback())
+    return app.httpRequest()
       .get('/')
       .expect({ foo: 'bar' })
       .expect(res => {
@@ -28,7 +27,7 @@ describe('test/cors.test.js', () => {
   });
 
   it('should set `Access-Control-Allow-Origin` to request origin header', () => {
-    return request(app.callback())
+    return app.httpRequest()
       .get('/')
       .set('Origin', 'http://eggjs.org')
       .expect('Access-Control-Allow-Origin', 'http://eggjs.org')
@@ -38,7 +37,7 @@ describe('test/cors.test.js', () => {
   });
 
   it('should set `Access-Control-Allow-Origin` to request origin header with second-level domain', () => {
-    return request(app.callback())
+    return app.httpRequest()
       .get('/')
       .set('Origin', 'http://test.eggjs.org')
       .expect('Access-Control-Allow-Origin', 'http://test.eggjs.org')
@@ -48,7 +47,7 @@ describe('test/cors.test.js', () => {
   });
 
   it('should set `Access-Control-Allow-Origin` to white list domain with protocol', () => {
-    return request(app.callback())
+    return app.httpRequest()
       .get('/')
       .set('Origin', 'https://a.com')
       .expect('Access-Control-Allow-Origin', 'https://a.com')
@@ -58,7 +57,7 @@ describe('test/cors.test.js', () => {
   });
 
   it('should set `Access-Control-Allow-Origin` to white list domain with protocol and port', () => {
-    return request(app.callback())
+    return app.httpRequest()
       .get('/')
       .set('Origin', 'https://b.com:1234')
       .expect('Access-Control-Allow-Origin', 'https://b.com:1234')
@@ -68,7 +67,7 @@ describe('test/cors.test.js', () => {
   });
 
   it('should set `Access-Control-Allow-Origin` to white list domain with protocol, wildcard and port', () => {
-    return request(app.callback())
+    return app.httpRequest()
       .get('/')
       .set('Origin', 'https://x.c.com')
       .expect('Access-Control-Allow-Origin', 'https://x.c.com')
@@ -78,7 +77,7 @@ describe('test/cors.test.js', () => {
   });
 
   it('should set `Access-Control-Allow-Origin` to request origin header with port', () => {
-    return request(app.callback())
+    return app.httpRequest()
       .get('/')
       .set('Origin', 'http://eggjs.org:3721')
       .expect('Access-Control-Allow-Origin', 'http://eggjs.org:3721')
@@ -89,7 +88,7 @@ describe('test/cors.test.js', () => {
 
   it('should set `Access-Control-Allow-Origin` on POST request', () => {
     app.mockCsrf();
-    return request(app.callback())
+    return app.httpRequest()
       .post('/')
       .set('Origin', 'http://eggjs.org')
       .expect('Access-Control-Allow-Origin', 'http://eggjs.org')
@@ -99,7 +98,7 @@ describe('test/cors.test.js', () => {
 
   it('should not set `Access-Control-Allow-Origin` when origin not in white list', () => {
     app.mockCsrf();
-    return request(app.callback())
+    return app.httpRequest()
       .get('/')
       .set('Origin', 'http://eggjs-black.org')
       .expect(res => {
@@ -111,7 +110,7 @@ describe('test/cors.test.js', () => {
 
   it('should not set `Access-Control-Allow-Origin` when origin = http://eggjs.org!.evil.com', () => {
     app.mockCsrf();
-    return request(app.callback())
+    return app.httpRequest()
       .get('/')
       .set('Origin', 'http://eggjs.org!.evil.com')
       .expect(res => {
@@ -123,7 +122,7 @@ describe('test/cors.test.js', () => {
 
   it('should not set `Access-Control-Allow-Origin` when origin = /foo', () => {
     app.mockCsrf();
-    return request(app.callback())
+    return app.httpRequest()
       .get('/')
       .set('Origin', '/foo')
       .expect(res => {
