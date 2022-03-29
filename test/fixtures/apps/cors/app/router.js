@@ -1,14 +1,14 @@
 'use strict';
 
 module.exports = app => {
-  app.get('/', function* () {
-    this.body = {
+  app.get('/', async ctx => {
+    ctx.body = {
       foo: 'bar',
     };
   });
 
-  app.post('/', function* () {
-    this.body = {
+  app.post('/', async ctx => {
+    ctx.body = {
       foo: 'bar',
     };
   });

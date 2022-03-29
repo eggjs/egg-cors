@@ -1,22 +1,14 @@
 # egg-cors
 
 [![NPM version][npm-image]][npm-url]
-[![build status][travis-image]][travis-url]
+[![Node.js CI](https://github.com/eggjs/egg-cors/actions/workflows/nodejs.yml/badge.svg)](https://github.com/eggjs/egg-cors/actions/workflows/nodejs.yml)
 [![Test coverage][codecov-image]][codecov-url]
-[![David deps][david-image]][david-url]
-[![Known Vulnerabilities][snyk-image]][snyk-url]
 [![npm download][download-image]][download-url]
 
 [npm-image]: https://img.shields.io/npm/v/egg-cors.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/egg-cors
-[travis-image]: https://img.shields.io/travis/eggjs/egg-cors.svg?style=flat-square
-[travis-url]: https://travis-ci.org/eggjs/egg-cors
 [codecov-image]: https://codecov.io/github/eggjs/egg-cors/coverage.svg?branch=master
 [codecov-url]: https://codecov.io/github/eggjs/egg-cors?branch=master
-[david-image]: https://img.shields.io/david/eggjs/egg-cors.svg?style=flat-square
-[david-url]: https://david-dm.org/eggjs/egg-cors
-[snyk-image]: https://snyk.io/test/npm/egg-cors/badge.svg?style=flat-square
-[snyk-url]: https://snyk.io/test/npm/egg-cors
 [download-image]: https://img.shields.io/npm/dm/egg-cors.svg?style=flat-square
 [download-url]: https://npmjs.org/package/egg-cors
 
@@ -73,3 +65,14 @@ Please open an issue [here](https://github.com/eggjs/egg/issues).
 ## License
 
 [MIT](LICENSE)
+<!-- GITCONTRIBUTOR_START -->
+
+## Contributors
+
+|[<img src="https://avatars.githubusercontent.com/u/227713?v=4" width="100px;"/><br/><sub><b>atian25</b></sub>](https://github.com/atian25)<br/>|[<img src="https://avatars.githubusercontent.com/u/985607?v=4" width="100px;"/><br/><sub><b>dead-horse</b></sub>](https://github.com/dead-horse)<br/>|[<img src="https://avatars.githubusercontent.com/u/156269?v=4" width="100px;"/><br/><sub><b>fengmk2</b></sub>](https://github.com/fengmk2)<br/>|[<img src="https://avatars.githubusercontent.com/u/3139237?v=4" width="100px;"/><br/><sub><b>brickyang</b></sub>](https://github.com/brickyang)<br/>|[<img src="https://avatars.githubusercontent.com/u/3297859?v=4" width="100px;"/><br/><sub><b>sinchang</b></sub>](https://github.com/sinchang)<br/>|[<img src="https://avatars.githubusercontent.com/u/2842176?v=4" width="100px;"/><br/><sub><b>XadillaX</b></sub>](https://github.com/XadillaX)<br/>|
+| :---: | :---: | :---: | :---: | :---: | :---: |
+[<img src="https://avatars.githubusercontent.com/u/1148428?v=4" width="100px;"/><br/><sub><b>mattma</b></sub>](https://github.com/mattma)<br/>|[<img src="https://avatars.githubusercontent.com/u/20397245?v=4" width="100px;"/><br/><sub><b>SoraYama</b></sub>](https://github.com/SoraYama)<br/>|[<img src="https://avatars.githubusercontent.com/u/9161488?v=4" width="100px;"/><br/><sub><b>Yelmor</b></sub>](https://github.com/Yelmor)<br/>|[<img src="https://avatars.githubusercontent.com/u/6895141?v=4" width="100px;"/><br/><sub><b>angela-1</b></sub>](https://github.com/angela-1)<br/>|[<img src="https://avatars.githubusercontent.com/u/1763067?v=4" width="100px;"/><br/><sub><b>waitingsong</b></sub>](https://github.com/waitingsong)<br/>
+
+This project follows the git-contributor [spec](https://github.com/xudafeng/git-contributor), auto updated at `Tue Mar 29 2022 21:57:49 GMT+0800`.
+
+<!-- GITCONTRIBUTOR_END -->
