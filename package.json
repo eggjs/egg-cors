@@ -25,10 +25,8 @@
     "@koa/cors": "^3.3.0"
   },
   "devDependencies": {
-    "autod": "^3.0.1",
     "egg": "^2.11.2",
     "egg-bin": "^4.9.0",
-    "egg-ci": "^1.9.2",
     "egg-mock": "^3.20.1",
     "egg-security": "^1.2.1",
     "eslint": "^5.6.1",
@@ -40,19 +38,14 @@
   },
   "scripts": {
     "contributor": "git-contributor",
-    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+    "test": "npm run lint -- --fix && npm run test-local",
     "test-local": "egg-bin test",
     "cov": "egg-bin cov",
     "lint": "eslint .",
-    "ci": "egg-bin pkgfiles --check && npm run lint && npm run cov",
-    "autod": "autod"
+    "ci": "npm run lint && npm run cov"
   },
   "bug": {
     "url": "https://github.com/eggjs/egg/issues"
-  },
-  "ci": {
-    "version": "8, 10, 12, 14, 16",
-    "type": "github"
   },
   "author": "dead_horse"
 }
