@@ -1,5 +1,3 @@
-'use strict';
-
 exports.keys = 'foo';
 
 exports.cors = {

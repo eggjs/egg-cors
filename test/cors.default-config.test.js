@@ -19,7 +19,7 @@ describe('test/cors.default-config.test.js', () => {
       .get('/')
       .expect({ foo: 'bar' })
       .expect(res => {
-        assert(!res.headers['access-control-allow-origin']);
+        assert.equal(res.headers['access-control-allow-origin'], undefined);
       })
       .expect(200);
   });
@@ -31,7 +31,7 @@ describe('test/cors.default-config.test.js', () => {
       .expect('Access-Control-Allow-Credentials', 'true')
       .expect({ foo: 'bar' })
       .expect(res => {
-        assert(!res.headers['access-control-allow-origin']);
+        assert.equal(res.headers['access-control-allow-origin'], undefined);
       })
       .expect(200);
   });
