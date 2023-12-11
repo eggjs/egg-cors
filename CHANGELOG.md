@@ -1,3 +1,15 @@
+# Changelog
+
+## [3.0.0](https://github.com/eggjs/egg-cors/compare/v2.2.3...v3.0.0) (2023-12-11)
+
+
+### ⚠ BREAKING CHANGES
+
+* drop Node.js < 14
+
+### Features
+
+* use @koa/cors@5.0.0 ([#27](https://github.com/eggjs/egg-cors/issues/27)) ([599e918](https://github.com/eggjs/egg-cors/commit/599e918f18f65c47e41ebf30d659ae439e10207d))
 
 2.2.3 / 2019-11-14
 ==================
