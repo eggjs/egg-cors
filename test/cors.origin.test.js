@@ -16,12 +16,12 @@ describe('test/cors.origin.test.js', () => {
 
   afterEach(mm.restore);
 
-  it('should not set `Access-Control-Allow-Origin` when request Origin header missing', () => {
+  it('should alway set `Access-Control-Allow-Origin` to config.origin=string when request Origin header missing', () => {
     return app.httpRequest()
       .get('/')
       .expect({ foo: 'bar' })
       .expect(res => {
-        assert(!res.headers['access-control-allow-origin']);
+        assert.equal(res.headers['access-control-allow-origin'], 'eggjs.org');
       })
       .expect(200);
   });
