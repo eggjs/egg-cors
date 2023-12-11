@@ -1,9 +1,8 @@
-'use strict';
-
 exports.keys = 'foo';
 
 exports.cors = {
-  async origin() {
+  async origin(ctx) {
+    if (!ctx.get('origin')) return '';
     return 'eggjs.org';
   },
   credentials: true,

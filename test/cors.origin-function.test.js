@@ -1,5 +1,3 @@
-'use strict';
-
 const assert = require('assert');
 const mm = require('egg-mock');
 
@@ -21,7 +19,7 @@ describe('test/cors.origin-function.test.js', () => {
       .get('/')
       .expect({ foo: 'bar' })
       .expect(res => {
-        assert(!res.headers['access-control-allow-origin']);
+        assert.equal(res.headers['access-control-allow-origin'], undefined);
       })
       .expect(200);
   });

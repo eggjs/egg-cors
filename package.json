@@ -22,7 +22,7 @@
     "cors"
   ],
   "dependencies": {
-    "@koa/cors": "^3.3.0"
+    "@koa/cors": "^5.0.0"
   },
   "devDependencies": {
     "egg": "^3.17.5",
@@ -30,11 +30,11 @@
     "egg-mock": "^5.10.9",
     "egg-security": "^3.1.0",
     "eslint": "^8.55.0",
-    "eslint-config-egg": "^12.3.1",
+    "eslint-config-egg": "^13.0.0",
     "git-contributor": "^2.1.5"
   },
   "engines": {
-    "node": ">=8.0.0"
+    "node": ">=16.0.0"
   },
   "scripts": {
     "contributor": "git-contributor",
