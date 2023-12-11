@@ -26,12 +26,12 @@
   },
   "devDependencies": {
     "egg": "^2.11.2",
-    "egg-bin": "^4.9.0",
+    "egg-bin": "^6.5.2",
     "egg-mock": "^3.20.1",
     "egg-security": "^1.2.1",
-    "eslint": "^5.6.1",
-    "eslint-config-egg": "^7.1.0",
-    "git-contributor": "^1.0.11"
+    "eslint": "^8.55.0",
+    "eslint-config-egg": "^12.3.1",
+    "git-contributor": "^2.1.5"
   },
   "engines": {
     "node": ">=8.0.0"

@@ -65,6 +65,7 @@ Please open an issue [here](https://github.com/eggjs/egg/issues).
 ## License
 
 [MIT](LICENSE)
+
 <!-- GITCONTRIBUTOR_START -->
 
 ## Contributors
@@ -73,6 +74,6 @@ Please open an issue [here](https://github.com/eggjs/egg/issues).
 | :---: | :---: | :---: | :---: | :---: | :---: |
 [<img src="https://avatars.githubusercontent.com/u/1148428?v=4" width="100px;"/><br/><sub><b>mattma</b></sub>](https://github.com/mattma)<br/>|[<img src="https://avatars.githubusercontent.com/u/20397245?v=4" width="100px;"/><br/><sub><b>SoraYama</b></sub>](https://github.com/SoraYama)<br/>|[<img src="https://avatars.githubusercontent.com/u/9161488?v=4" width="100px;"/><br/><sub><b>Yelmor</b></sub>](https://github.com/Yelmor)<br/>|[<img src="https://avatars.githubusercontent.com/u/6895141?v=4" width="100px;"/><br/><sub><b>angela-1</b></sub>](https://github.com/angela-1)<br/>|[<img src="https://avatars.githubusercontent.com/u/1763067?v=4" width="100px;"/><br/><sub><b>waitingsong</b></sub>](https://github.com/waitingsong)<br/>
 
-This project follows the git-contributor [spec](https://github.com/xudafeng/git-contributor), auto updated at `Tue Mar 29 2022 21:57:49 GMT+0800`.
+This project follows the git-contributor [spec](https://github.com/xudafeng/git-contributor), auto updated at `Mon Dec 11 2023 13:25:00 GMT+0800`.
 
 <!-- GITCONTRIBUTOR_END -->

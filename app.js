@@ -1,5 +1,3 @@
-'use strict';
-
 // there is no global.URL in node 8
 const URL = require('url').URL;
 
