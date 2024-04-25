@@ -1,6 +1,6 @@
 {
   "name": "egg-cors",
-  "version": "2.2.3",
+  "version": "2.2.4",
   "publishConfig": {
     "tag": "latest-2"
   },
