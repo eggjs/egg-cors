@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  * cors default config
  * @member Config#cors
