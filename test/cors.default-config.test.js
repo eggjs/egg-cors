@@ -24,6 +24,13 @@ describe('test/cors.default-config.test.js', () => {
       .expect(200);
   });
 
+  it('should hasCustomOriginHandler set to false', () => {
+    return app.httpRequest()
+      .get('/config')
+      .expect({ hasCustomOriginHandler: false })
+      .expect(200);
+  });
+
   it('should not set `Access-Control-Allow-Origin` to request origin header', () => {
     app.httpRequest()
       .get('/')
