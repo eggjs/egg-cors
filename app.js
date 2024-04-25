@@ -6,6 +6,7 @@ module.exports = app => {
   app.config.coreMiddlewares.unshift('cors');
 
   // if security plugin enabled, and origin config is not provided, will only allow safe domains support CORS.
+  app.config.cors.hasCustomOriginHandler = !!app.config.cors.origin;
   app.config.cors.origin = app.config.cors.origin || function corsOrigin(ctx) {
     // origin is {protocol}{hostname}{port}...
     const origin = ctx.get('origin');
