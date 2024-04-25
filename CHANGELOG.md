@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.1](https://github.com/eggjs/egg-cors/compare/v3.0.0...v3.0.1) (2024-04-25)
+
+
+### Bug Fixes
+
+* let framework known app has custom origin handler or not ([#28](https://github.com/eggjs/egg-cors/issues/28)) ([#29](https://github.com/eggjs/egg-cors/issues/29)) ([b446a98](https://github.com/eggjs/egg-cors/commit/b446a987ee66c38ac07458a5d69992f5a43071a2))
+
 ## [3.0.0](https://github.com/eggjs/egg-cors/compare/v2.2.3...v3.0.0) (2023-12-11)
 
 
